@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id: 9.99
+  body: MyString
+  user_id: 1
+  user_screen_name: MyString
+  profile_image_url: MyString
+  randomize: 1
+
+two:
+  id: 9.99
+  body: MyString
+  user_id: 1
+  user_screen_name: MyString
+  profile_image_url: MyString
+  randomize: 1

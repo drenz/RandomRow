@@ -1,0 +1,33 @@
+<h1>Listing tweets</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Body</th>
+    <th>User</th>
+    <th>User screen name</th>
+    <th>Profile image url</th>
+    <th>Randomize</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tweets.each do |tweet| %>
+  <tr>
+    <td><%= tweet.id %></td>
+    <td><%= tweet.body %></td>
+    <td><%= tweet.user_id %></td>
+    <td><%= tweet.user_screen_name %></td>
+    <td><%= tweet.profile_image_url %></td>
+    <td><%= tweet.randomize %></td>
+    <td><%= link_to 'Show', tweet %></td>
+    <td><%= link_to 'Edit', edit_tweet_path(tweet) %></td>
+    <td><%= link_to 'Destroy', tweet, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Tweet', new_tweet_path %>
