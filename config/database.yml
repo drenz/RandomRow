@@ -7,7 +7,7 @@ development:
   database: RandomRow_development
   pool: 5
   username: root
-  password: twitter4us
+  password:
   socket: /var/mysql/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -20,7 +20,7 @@ test:
   database: RandomRow_test
   pool: 5
   username: root
-  password: twitter4us
+  password:
   socket: /var/mysql/mysql.sock
 
 production:
@@ -30,5 +30,5 @@ production:
   database: RandomRow_production
   pool: 5
   username: root
-  password: twitter4us
+  password:
   socket: /tmp/mysql.sock
